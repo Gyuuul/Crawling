@@ -7,8 +7,8 @@ html= response.text
 soup= BeautifulSoup(html,'html.parser')
 links= soup.select('.news_tit')
 for link in links:
-    title =link.text #태그 안에 텍스트 요소를 가져온다
-    url =link.attrs['href'] #href의 속성값을 가져온다
+    title =link.text 
+    url =link.attrs['href']
 
 print(title, url)
 
